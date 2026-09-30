@@ -1,0 +1,23 @@
+[project]
+name = "tagbot"
+version = "0.1.0"
+description = "Agentic Discord bot that summarizes recent channel messages"
+requires-python = ">=3.11"
+dependencies = [
+    "discord.py>=2.4",
+    "openai>=1.60",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.24"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tagbot"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
