@@ -8,8 +8,6 @@ The model can call tools to pull missing context (reply targets outside the wind
 - `/summarize [n]`
 - `@tagbot summarize [n]` (or just `@tagbot`, `@tagbot 50`)
 
-Each channel is limited to one summary per 30s.
-
 ## Setup
 
 1. In the [Discord Developer Portal](https://discord.com/developers/applications), create an application and add a bot.
